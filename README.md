@@ -4,11 +4,12 @@ ARCHITETURE OF AWS DATA ANALYSIS:
 
 ## STEPS PERFORMED FOR SALES DATA ANALYSIS:
 1.CREATING IAM USER AND LOGIN
+
  -Created I AM User Data-Analysis
  -Login as I AM User to perform Data Analysis
 
 2.UPLOADING DATA TO AMAZON S3
- -Created Bucket S3-data-analysis- sales
+ - Created Bucket S3-data-analysis- sales
  -Created folder as sales-data
  -Uploaded Objects Sales.CSV
 
