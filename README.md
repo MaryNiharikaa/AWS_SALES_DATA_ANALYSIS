@@ -27,7 +27,7 @@ ARCHITETURE OF AWS DATA ANALYSIS:
   * Filtering with partitions
   * Querry Logs saved in S3
 
-5.VISLAIZING DATA WITH AMAZON QUICKSIGHT
+5.VISUALISATION DATA WITH AMAZON QUICKSIGHT
   * Importing Data from Athena
   * Reporting the sales visualization
 
