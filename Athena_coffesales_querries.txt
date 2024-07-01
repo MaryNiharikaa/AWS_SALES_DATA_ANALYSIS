@@ -1,0 +1,36 @@
+SELECT * FROM "db_data_analysis"."sales_data"; --- 13 MB data scanned overall---
+
+SELECT * FROM sales_data WHERE snapshot_day='2023_Jan';
+SELECT * FROM sales_data WHERE snapshot_day='2023_Feb';
+SELECT * FROM sales_data WHERE snapshot_day='2023_Mar';
+SELECT * FROM sales_data WHERE snapshot_day='2023_Apr';
+SELECT * FROM sales_data WHERE snapshot_day='2023_May';
+SELECT * FROM sales_data WHERE snapshot_day='2023_June';
+
+
+
+-- Total Sales--
+SELECT ROUND(SUM(unit_price * transaction_qty)) as Total_Sales 
+FROM sales_data
+WHERE snapshot_day='2023_Jan';
+
+
+
+-- Total orders--
+SELECT COUNT(transaction_id) as Total_Orders
+FROM sales_data 
+WHERE snapshot_day='2023_Jan';  --- we can do it for all individual months --- 
+
+--total quantity sold--
+SELECT SUM(transaction_qty) as Total_Quantity_Sold
+FROM sales_data 
+WHERE snapshot_day='2023_Jan';
+
+
+-- sales by store location --
+SELECT store_location,SUM(unit_price * transaction_qty) as Total_Sales
+FROM sales_data 
+WHERE snapshot_day='2023_Jan'
+GROUP BY store_location
+ORDER BY Total_Sales DESC;
+
