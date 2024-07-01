@@ -4,13 +4,13 @@ ARCHITETURE OF AWS DATA ANALYSIS:
 
 ## STEPS PERFORMED FOR SALES DATA ANALYSIS:
 1.CREATING IAM USER AND LOGIN:
-  *Created I AM User Data-Analysis
-  *Login as I AM User to perform Data Analysis
+ *Created I AM User Data-Analysis
+ *Login as I AM User to perform Data Analysis
 
 2.UPLOADING DATA TO AMAZON S3:
-  *Created Bucket S3-data-analysis- sales
-  *Created folder as sales-data
-  *Uploaded Objects Sales.CSV
+ *Created Bucket S3-data-analysis- sales
+ *Created folder as sales-data
+ *Uploaded Objects Sales.CSV
 
 3.DATA CRAWLING WITH AWS GLUE:
   * Creating Crawler
@@ -28,8 +28,8 @@ ARCHITETURE OF AWS DATA ANALYSIS:
   * Querry Logs saved in S3
 
 5.VISLAIZING DATA WITH AMAZON QUICKSIGHT:
-  *Importing Data from Athena
-  *Reporting the sales visualization
+ *Importing Data from Athena
+ *Reporting the sales visualization
 
 # CONCLUSION
 The seamless integration of AWS Athena and AWS Glue enables organizations to leverage schema and crawled data for efficient and optimized database queries. By combining the power of metadata-driven analysis and query execution, businesses can uncover valuable insights, make informed decisions, and drive success in the data-driven era.
